@@ -1,3 +1,26 @@
 
 /* all elements in the page */
 
+
+/* ---- PROJECT BUTTONS ---- */
+.project-btn {
+  display: inline-block;
+  position: relative;
+}
+
+.project-btn img {
+  display: block;
+}
+
+.project-btn .img-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-btn:hover .img-active {
+  opacity: 1;
+}
+
