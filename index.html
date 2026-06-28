@@ -1,66 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- name on the website page column -->
   <title>Julija Cvijanovic | Portfolio 2026</title>
-  <meta charset="utf-8" />  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/style.css">
-</head> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
-  <!-- this is where my code is-->
+  <!-- HEADER -->
+  <header id="site-header">
+    <h1>StudioJuca</h1>
+    <button id="darkmode">Light Mode</button>
+  </header>
 
-    <button id="darkmode" class="my-button1">
-      Dark Mode Toggle
-    </button>
+  <!-- INTRO -->
+  <section id="intro">
+    <div class="intro-portrait">
+      <img src="assets/SelfPortrait_Placeholder.png" alt="Julija Cvijanovic" />
+    </div>
+    <div class="intro-text">
+      <h2>Welcome to my Portfolio!</h2>
+      <p class="location">Based in Oslo, Norway.</p>
+      <p>I am a committed and curious student with a great interest in Service and Interaction Design.
+        My portfolio consists of projects I've done through AHO and SNU, encompassing UX/UI design work,
+        comprehensive project design case studies, and a diverse collection of client-based projects.
+        Lastly, I added a personal project from my free time!</p>
+    </div>
+  </section>
 
-    <!-- Project Buttons -->
-    <a href="pages/projects/ark.html" class="project-btn">
-      <img src="assets/Projects/ARK-Lineart.png" alt="ARK" class="img-inactive" />
-      <img src="assets/Projects/ARK-Colour.png"   alt="ARK" class="img-active" />
-    </a>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects!</h2>
 
-    <a href="pages/projects/dialogverktøy.html" class="project-btn">
-      <img src="assets/Projects/Dialogverktøy-Lineart.png" alt="Dialogverktøy" class="img-inactive" />
-      <img src="assets/Projects/Dialogverktøy-Colour.png" alt="Dialogverktøy" class="img-active" />
-    </a>
+    <div class="mindmap">
 
-    <a href="pages/projects/komboreise.html" class="project-btn">
-      <img src="assets/Projects/Komboreise-Lineart.png" alt="Komboreise" class="img-inactive" />
-      <img src="assets/Projects/Komboreise-Colour.png" alt="Komboreise" class="img-active" />
-    </a>
+      <!-- Category label buttons -->
+      <button class="cat-label cat-uxui" id="btn-uxui">Ux/Ui projects</button>
+      <button class="cat-label cat-collab" id="btn-collab">Collaborations</button>
+      <button class="cat-label cat-product" id="btn-product">Product projects</button>
 
-    <a href="pages/projects/shelfie.html" class="project-btn">
-      <img src="assets/Projects/Shelfie-Lineart.png" alt="Shelfie" class="img-inactive" />
-      <img src="assets/Projects/Shelfie-Colour.png" alt="Shelfie" class="img-active" />
-    </a>
+      <!-- Row 1 — UX/UI only -->
+      <div class="project-row" id="row-1">
+        <a href="pages/projects/ark.html" class="project-btn">
+          <img src="assets/Projects/ARK-Lineart.png" alt="ARK" class="img-inactive" />
+          <img src="assets/Projects/ARK-Colour.png" alt="ARK" class="img-active" />
+        </a>
+        <a href="pages/projects/shelfie.html" class="project-btn">
+          <img src="assets/Projects/Shelfie-Lineart.png" alt="Shelfie" class="img-inactive" />
+          <img src="assets/Projects/Shelfie-Colour.png" alt="Shelfie" class="img-active" />
+        </a>
+        <a href="pages/projects/navi.html" class="project-btn">
+          <img src="assets/Projects/NAVI-Lineart.png" alt="NAVI" class="img-inactive" />
+          <img src="assets/Projects/NAVI-Colour.png" alt="NAVI" class="img-active" />
+        </a>
+      </div>
 
-    <a href="pages/projects/ludo.html" class="project-btn">
-      <img src="assets/Projects/Ludo-Lineart.png" alt="Ludo" class="img-inactive" />
-      <img src="assets/Projects/Ludo-Colour.png" alt="Ludo" class="img-active" />
-    </a>
+      <!-- Row 2 — UX/UI + Collaboration -->
+      <div class="project-row" id="row-2">
+        <a href="pages/projects/mulighetsrommet.html" class="project-btn">
+          <img src="assets/Projects/Mulighetsrommet-Lineart.png" alt="Mulighetsrommet" class="img-inactive" />
+          <img src="assets/Projects/Mulighetsrommet-Colour.png" alt="Mulighetsrommet" class="img-active" />
+        </a>
+        <a href="pages/projects/komboreise.html" class="project-btn">
+          <img src="assets/Projects/Komboreise-Lineart.png" alt="Komboreise" class="img-inactive" />
+          <img src="assets/Projects/Komboreise-Colour.png" alt="Komboreise" class="img-active" />
+        </a>
+        <a href="pages/projects/dialogverktøy.html" class="project-btn">
+          <img src="assets/Projects/Dialogverktøy-Lineart.png" alt="Dialogverktøy" class="img-inactive" />
+          <img src="assets/Projects/Dialogverktøy-Colour.png" alt="Dialogverktøy" class="img-active" />
+        </a>
+      </div>
 
-    <a href="pages/projects/mulighetsrommet.html" class="project-btn">
-      <img src="assets/Projects/Mulighetsrommet-Lineart.png" alt="Mulighetsrommet" class="img-inactive" />
-      <img src="assets/Projects/Mulighetsrommet-Colour.png" alt="Mulighetsrommet" class="img-active" />
-    </a>
+      <!-- Row 3 — Product + Collaboration -->
+      <div class="project-row" id="row-3">
+        <a href="pages/projects/solbakken.html" class="project-btn">
+          <img src="assets/Projects/Solbakken-Lineart.png" alt="Solbakken" class="img-inactive" />
+          <img src="assets/Projects/Solbakken-Colour.png" alt="Solbakken" class="img-active" />
+        </a>
+        <a href="pages/projects/ludo.html" class="project-btn">
+          <img src="assets/Projects/Ludo-Lineart.png" alt="Ludo" class="img-inactive" />
+          <img src="assets/Projects/Ludo-Colour.png" alt="Ludo" class="img-active" />
+        </a>
+        <a href="pages/projects/sommerrocutlery.html" class="project-btn">
+          <img src="assets/Projects/SommerroCutlery-Lineart.png" alt="Sommerro Cutlery" class="img-inactive" />
+          <img src="assets/Projects/SommerroCutlery-Colour.png" alt="Sommerro Cutlery" class="img-active" />
+        </a>
+      </div>
 
-    <a href="pages/projects/solbakken.html" class="project-btn">
-      <img src="assets/Projects/Solbakken-Lineart.png" alt="Solbakken" class="img-inactive" />
-      <img src="assets/Projects/Solbakken-Colour.png" alt="Solbakken" class="img-active" />
-    </a>
+      <!-- Row 4 — Product only -->
+      <div class="project-row" id="row-4">
+        <a href="pages/projects/ticktacktoe.html" class="project-btn">
+          <img src="assets/Projects/TickTackToe-Lineart.png" alt="TickTackToe" class="img-inactive" />
+          <img src="assets/Projects/TickTackToe-Colour.png" alt="TickTackToe" class="img-active" />
+        </a>
+      </div>
 
-    <a href="pages/projects/muzea.html" class="project-btn">
-      <img src="assets/Projects/Muzea-Lineart.png" alt="Muzea" class="img-inactive" />
-      <img src="assets/Projects/Muzea-Colour.png" alt="Muzea" class="img-active" />
-    </a>
+    </div>
+  </section>
 
-    <a href="pages/projects/ticktacktoe.html" class="project-btn">
-      <img src="assets/Projects/TickTackToe-Lineart.png" alt="TickTackToe" class="img-inactive" />
-      <img src="assets/Projects/TickTackToe-Colour.png" alt="TickTackToe" class="img-active" />
-    </a>
+  <!-- PORTFOLIO DOWNLOAD -->
+  <section id="download">
+    <h2>Portfolio</h2>
+    <p>Password-protected PDF available on request.</p>
+    <button id="download-btn" onclick="requestDownload()">Download Portfolio</button>
+  </section>
 
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <div class="footer-links">
+      <a href="https://www.instagram.com/studiojuca/" target="_blank" class="footer-link">Instagram</a>
+      <a href="https://www.linkedin.com/in/julijacvijanovic/" target="_blank" class="footer-link">LinkedIn</a>
+      <a href="mailto:cvijanovicjulija@gmail.com" class="footer-link">Email me</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 StudioJuca</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
