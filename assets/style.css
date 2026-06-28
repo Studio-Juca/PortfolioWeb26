@@ -4,6 +4,7 @@
   --ivory: #FFFDEF;
   --goldilocks: #F9C379;
   --ivy: #6BA680;
+  --onyx: #0E0E2C;
   --font-heading: 'Cormorant SC', Georgia, serif;
   --font-body: 'EB Garamond', Georgia, serif;
 }
@@ -97,6 +98,7 @@ body {
 .intro-text p {
   font-size: 1.05rem;
   line-height: 1.75;
+  color: var(--onyx)
 }
 
 /* ---- PROJECTS SECTION ---- */
@@ -227,8 +229,8 @@ body {
 
 /* ---- DOWNLOAD SECTION ---- */
 #download {
-  background-color: var(--chocolate-cosmos);
-  color: var(--ivory);
+  background-color: var(--ivory);
+  color: var(--chocolate-cosmos);
   text-align: center;
   padding: 60px 40px;
   border-top: 1px solid rgba(255, 253, 239, 0.2);
@@ -245,14 +247,15 @@ body {
 #download p {
   font-size: 1rem;
   font-style: italic;
+  color: var(--onyx);
   margin-bottom: 28px;
   opacity: 0.8;
 }
 
 #download-btn {
   background: transparent;
-  border: 1px solid var(--ivory);
-  color: var(--ivory);
+  border: 1px solid var(--chocolate-cosmos);
+  color: var(--chocolate-cosmos);
   font-family: var(--font-body);
   font-size: 1rem;
   padding: 10px 28px;
@@ -262,8 +265,8 @@ body {
 }
 
 #download-btn:hover {
-  background: var(--ivory);
-  color: var(--chocolate-cosmos);
+  background: var(--chocolate-cosmos);
+  color: var(--ivory);
 }
 
 /* ---- FOOTER ---- */
