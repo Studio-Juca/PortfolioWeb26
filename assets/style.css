@@ -131,7 +131,7 @@ body {
   grid-template-columns: 160px 1fr 1fr 1fr 160px;
   grid-template-rows: auto auto auto auto;
   gap: 48px 28px;
-  padding: 0 60px 40px;
+  padding: 0 24px 40px;
   align-items: center;
 }
 
@@ -185,9 +185,9 @@ body {
 .project-row {
   display: flex;
   gap: 28px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 170px;
+  min-height: 120px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
@@ -202,14 +202,14 @@ body {
 .project-btn {
   position: relative;
   display: inline-block;
-  width: 155px;
-  height: 155px;
+  width: 110px;
+  height: 110px;
   flex-shrink: 0;
 }
 
 .project-btn img {
-  width: 155px;
-  height: 155px;
+  width: 110px;
+  height: 110px;
   object-fit: contain;
   display: block;
   border-radius: 18px;
@@ -311,4 +311,95 @@ body {
 body.dark-mode {
   --chocolate-cosmos: #FFFDEF;
   --ivory: #550C18;
+}
+
+/* ---- RESPONSIVE: MOBILE ---- */
+@media (max-width: 768px) {
+
+  /* Header */
+  #site-header {
+    padding: 14px 16px;
+    justify-content: space-between;
+  }
+
+  #site-header h1 {
+    font-size: 1.6rem;
+  }
+
+  #darkmode {
+    position: static;
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+
+  /* Intro: stack portrait above text */
+  #intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 36px 24px;
+    gap: 24px;
+  }
+
+  .intro-portrait img {
+    width: 160px;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro-text p {
+    text-align: left;
+  }
+
+  /* Projects section */
+  #projects {
+    padding: 32px 0 40px;
+  }
+
+  /* Mindmap: 3-column grid — labels in one row, project rows below */
+  .mindmap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 0 16px 24px;
+  }
+
+  .cat-uxui   { grid-column: 1; grid-row: 1; min-height: 56px; }
+  .cat-collab { grid-column: 2; grid-row: 1; min-height: 56px; }
+  .cat-product{ grid-column: 3; grid-row: 1; min-height: 56px; }
+
+  #row-1 { grid-column: 1 / 4; grid-row: 2; }
+  #row-2 { grid-column: 1 / 4; grid-row: 3; }
+  #row-3 { grid-column: 1 / 4; grid-row: 4; }
+  #row-4 { grid-column: 1 / 4; grid-row: 5; }
+
+  .project-row {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 12px;
+    min-height: 100px;
+  }
+
+  /* Smaller project images */
+  .project-btn,
+  .project-btn img {
+    width: 85px;
+    height: 85px;
+  }
+
+  /* Download section */
+  #download {
+    padding: 40px 24px;
+  }
+
+  /* Footer */
+  #site-footer {
+    padding: 32px 24px 20px;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
 }
