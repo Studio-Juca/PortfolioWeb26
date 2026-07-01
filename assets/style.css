@@ -1,10 +1,11 @@
 /* ---- CSS VARIABLES ---- */
 :root {
-  --chocolate-cosmos: #550C18;
+  --chocolate-cosmos: #5E1823;
   --ivory: #FFFDEF;
   --goldilocks: #F9C379;
-  --ivy: #6BA680;
+  --frozenwater: #BCD6BD; 
   --onyx: #0E0E2C;
+  --onyx-light: #3E3E56;
   --font-heading: 'Cormorant SC', Georgia, serif;
   --font-body: 'EB Garamond', Georgia, serif;
 }
@@ -179,7 +180,7 @@ body {
 
 .cat-uxui    { background-color: var(--ivory); }
 .cat-collab  { background-color: var(--goldilocks); }
-.cat-product { background-color: var(--ivy); }
+.cat-product { background-color: var(--frozenwater); }
 
 /* ---- PROJECT ROWS ---- */
 .project-row {
