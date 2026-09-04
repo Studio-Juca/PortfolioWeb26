@@ -14,34 +14,38 @@ function requestDownload() {
   }
 }
 
-const btnUxui   = document.getElementById('btn-uxui');
-const btnCollab  = document.getElementById('btn-collab');
+const btnUxui = document.getElementById('btn-uxui');
 const btnProduct = document.getElementById('btn-product');
-
-const rows = {
-  1: document.getElementById('row-1'),
-  2: document.getElementById('row-2'),
-  3: document.getElementById('row-3'),
-  4: document.getElementById('row-4'),
-};
+const mindmap = document.querySelector('.mindmap');
+const uxuiSet = document.getElementById('uxui-set');
+const productSet = document.getElementById('product-set');
 
 function updateRows() {
-  const uxui    = btnUxui.classList.contains('active');
-  const collab  = btnCollab.classList.contains('active');
+  const uxui = btnUxui.classList.contains('active');
   const product = btnProduct.classList.contains('active');
 
-  rows[1].classList.toggle('visible', uxui);
-  rows[2].classList.toggle('visible', uxui || collab);
-  rows[3].classList.toggle('visible', collab || product);
-  rows[4].classList.toggle('visible', product);
+  uxuiSet.classList.toggle('visible', uxui);
+  productSet.classList.toggle('visible', product);
+
+  if (uxui) {
+    mindmap.prepend(uxuiSet);
+  } else if (product) {
+    mindmap.prepend(productSet);
+  }
 }
 
-[btnUxui, btnCollab, btnProduct].forEach(btn => {
+[btnUxui, btnProduct].forEach((btn) => {
   btn.addEventListener('click', () => {
-    btn.classList.toggle('active');
+    const isUxuiSelected = btn === btnUxui;
+    btnUxui.classList.toggle('active', isUxuiSelected);
+    btnProduct.classList.toggle('active', !isUxuiSelected);
     updateRows();
   });
 });
+
+btnUxui.classList.add('active');
+btnProduct.classList.remove('active');
+updateRows();
 
 const darkmodeBtn = document.getElementById('darkmode');
 
