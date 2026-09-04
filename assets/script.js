@@ -3,11 +3,11 @@
 
 /* Passwords for different people:
 TEST: Vuk&Vukica
-KBG Kommune: Jobbsøknad2026
+Jobbsøknadd: Jobb2026
 */
 function requestDownload() {
   const input = prompt("Enter password to download portfolio:");
-  if (input === "Vuk&Vukica") {
+  if (input === "Jobb2026") {
     window.location.href = "assets/JulijaC_Portfolio2026.pdf";
   } else {
     alert("Incorrect password. Please contact me to request access.");
