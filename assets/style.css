@@ -352,7 +352,7 @@ a {
   padding: 16px 16px 16px 14px;
   border-radius: 20px;
   border: 1px solid rgba(23, 27, 44, 0.08);
-  background: var(--chocolate-cosmos);
+  background: #5E1823;
   box-shadow: 0 10px 24px rgba(23, 27, 44, 0.04);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
